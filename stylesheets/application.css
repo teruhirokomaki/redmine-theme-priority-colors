@@ -85,10 +85,13 @@ tr.priority-highest td {
 /* ---------------------------------------------------------------------------
    Code block copy button — visible without :hover on touch / coarse pointers
    Redmine core hides a.copy-pre-content-link until div.pre-wrapper:hover.
+   pre (overflow) paints after the absolutely positioned link in tree order;
+   z-index keeps the control above the pre background on iOS Safari.
    --------------------------------------------------------------------------- */
 
 @media (hover: none), (pointer: coarse) {
   div.pre-wrapper a.copy-pre-content-link {
     display: block;
+    z-index: 1;
   }
 }
