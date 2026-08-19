@@ -81,3 +81,14 @@ table.list tbody tr.even.priority-highest:hover {
 tr.priority-highest td {
   font-weight: bold;
 }
+
+/* ---------------------------------------------------------------------------
+   Code block copy button — visible without :hover on touch / coarse pointers
+   Redmine core hides a.copy-pre-content-link until div.pre-wrapper:hover.
+   --------------------------------------------------------------------------- */
+
+@media (hover: none), (pointer: coarse) {
+  div.pre-wrapper a.copy-pre-content-link {
+    display: block;
+  }
+}
