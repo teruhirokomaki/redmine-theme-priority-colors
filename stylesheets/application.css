@@ -1,0 +1,83 @@
+@import url(../../../stylesheets/application.css);
+
+/* ==========================================================================
+   Priority Colors — Redmine Theme
+   Colorizes issue list rows by priority level (cool → warm gradient).
+   odd rows are slightly darker, even rows are lighter for stripe effect.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   Lowest — blue
+   --------------------------------------------------------------------------- */
+
+tr.odd.priority-lowest {
+  background: #e8f1fc;
+}
+
+tr.even.priority-lowest {
+  background: #f3f8ff;
+}
+
+table.list tbody tr.odd.priority-lowest:hover,
+table.list tbody tr.even.priority-lowest:hover {
+  background: #dce8f8;
+}
+
+/* ---------------------------------------------------------------------------
+   Default — no override, uses default
+   --------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+   High (3) — amber
+   --------------------------------------------------------------------------- */
+
+tr.odd.priority-high3 {
+  background: #fef6d6;
+}
+
+tr.even.priority-high3 {
+  background: #fffbeb;
+}
+
+table.list tbody tr.odd.priority-high3:hover,
+table.list tbody tr.even.priority-high3:hover {
+  background: #fdf0be;
+}
+
+/* ---------------------------------------------------------------------------
+   High (2) — rose
+   --------------------------------------------------------------------------- */
+
+tr.odd.priority-high2 {
+  background: #ffe4e6;
+}
+
+tr.even.priority-high2 {
+  background: #fff1f2;
+}
+
+table.list tbody tr.odd.priority-high2:hover,
+table.list tbody tr.even.priority-high2:hover {
+  background: #fdd8db;
+}
+
+/* ---------------------------------------------------------------------------
+   Highest — red
+   --------------------------------------------------------------------------- */
+
+tr.odd.priority-highest {
+  background: #fddcdc;
+}
+
+tr.even.priority-highest {
+  background: #fef2f2;
+}
+
+table.list tbody tr.odd.priority-highest:hover,
+table.list tbody tr.even.priority-highest:hover {
+  background: #fccece;
+}
+
+tr.priority-highest td {
+  font-weight: bold;
+}
